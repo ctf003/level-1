@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Exploit - CTF Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">Mission Exploit</h1>
+            <div class="status">
+                <span class="status-text">STATUS: CONNECTED</span>
+                <span class="blink">█</span>
+            </div>
+        </div>
+        
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-title">root@mission-exploit:~#</div>
+                <div class="terminal-controls">
+                    <span class="control minimize">−</span>
+                    <span class="control maximize">□</span>
+                    <span class="control close">×</span>
+                </div>
+            </div>
+            
+            <div class="terminal-body">
+                <div id="output" class="output">
+                    <div class="welcome-box">
+                        <div class="welcome-header">
+                            <span class="welcome-title">MISSION EXPLOIT</span>
+                            <span class="welcome-subtitle">CTF HASHING CHALLENGE</span>
+                        </div>
+                        <div class="welcome-content">
+                            <p>Welcome, Agent. Your mission is to find the hidden flag.</p>
+                            <p>Use terminal commands to explore the system.</p>
+                            <p>Type <span class="highlight">'help'</span> for available commands.</p>
+                            <br>
+                            <p class="warning-text">Good luck, and remember: nothing is as it seems...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-line">
+                    <span class="prompt">root@mission-exploit:~# </span>
+                    <div class="input-container">
+                        <input type="text" id="commandInput" class="command-input" autocomplete="off" spellcheck="false">
+                        <span class="cursor">█</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="system-info">
+                <span>SYSTEM: LINUX v2.6.32</span>
+                <span>|</span>
+                <span>ENCRYPTION: MD5</span>
+                <span>|</span>
+                <span>SECURITY: COMPROMISED</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
